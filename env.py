@@ -211,4 +211,5 @@ class flappy_env(Env):
 
     def reset(self):
         self.game.reset_game()
-        return self.game.get_state()
+        state = self.game.get_state()
+        return state

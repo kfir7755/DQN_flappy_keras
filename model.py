@@ -26,7 +26,6 @@ def build_agent(sequential_model):
 
 env = flappy_env()
 model = build_model()
-model.summary()
 dqn = build_agent(model)
 dqn.compile(Adam(learning_rate=1e-4))
 dqn.fit(env, nb_steps=10000, visualize=False)
