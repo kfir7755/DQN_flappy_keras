@@ -4,8 +4,6 @@ from gym import Env
 from gym.spaces import Discrete, Box
 import numpy as np
 
-pygame.init()
-
 screen_width = 864
 screen_height = 936
 
